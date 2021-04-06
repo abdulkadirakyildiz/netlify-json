@@ -2,11 +2,9 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  // console.log(node);
   const { createNodeField } = actions
   if (node.internal.mediaType === `application/json`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
-    console.log(node)
     createNodeField({
       node,
       name: `slug`,
