@@ -1,0 +1,17 @@
+{
+  "price": 8,
+  "name": "Tavuk Döner",
+  "slug": "tavuk_doner",
+  "currency": "₺",
+  "related_products": [
+    "cevizli-baklava",
+    "hamsi-tava"
+  ],
+  "image": "/images/chicken-food.png",
+  "categories": [
+    "all",
+    "fast-food"
+  ],
+  "description": " asdölşa sdofhıasdfkbasdhf bvvnhuxc vcxajıu hcaasdölşa sdofhıasdfkbasdhf bvvnhuxc vcxajıu hcaasdölşa sdofhıasdfkbasdhf bvvnhuxc vcxajıu hcaasdölşa sdofhıasdfkbasdhf bvvnhuxc vcxajıu hcaasdölşa sdofhıasdfkbasdhf bvvnhuxc vcxajıu hca",
+  "rating": 5
+}
