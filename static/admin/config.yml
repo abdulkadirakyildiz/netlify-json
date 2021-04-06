@@ -8,8 +8,10 @@ public_folder: /images
 collections:
   - label: "Product Update and Add"
     name: "products"
-    folder: "content/alldata"
+    folder: "src/content/alldata"
     create: true
+    extension: json
+    format: json
     slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     media_folder: "content/images"
     identifier_field: title
