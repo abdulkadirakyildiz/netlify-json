@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: content/images
+public_folder: /images
+
+collections:
+  - label: "Product Update and Add"
+    name: "products"
+    folder: "content/alldata"
+    create: true
+    slug: '{{fields.name}}'
+    media_folder: "content/images"
+    identifier_field: title
+    # public_folder: ''
+    path: "{{title}}"
+    # editor:
+    #   preview: true
+    # delete: false
+    fields:
+      - { label: "slug", name: "title", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Price", name: "price", widget: "number" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Rating", name: "rating", widget: "number" }
+      - { label: "Currentcy", name: "currency", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: "Related Products", name: "related_products", widget: "list" }

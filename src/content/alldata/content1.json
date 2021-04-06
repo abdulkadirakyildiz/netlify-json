@@ -1,0 +1,16 @@
+{
+  "price": 8,
+  "name": "Cevizli Baklava",
+  "slug": "cevizli-baklava",
+  "currency": "₺",
+  "related_products": [
+    "icli-kofte"
+  ],
+  "image": "../images/product-cevizli-baklava.jpg",
+  "categories": [
+    "all",
+    "tatli"
+  ],
+  "description": "Özel sinisi içerisinde, el açma hamuru ile usta ellerde hazırlanan, cevizi bol, kesimi özel, şerbeti taze olarak verilmiş olarak hazırlanır. Her bir porsiyonda 4 adet servis edilir.",
+  "rating": 4.6
+}

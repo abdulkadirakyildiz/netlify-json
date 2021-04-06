@@ -1,0 +1,16 @@
+{
+  "price": 10,
+  "name": "İçli Köfte",
+  "slug": "icli-kofte",
+  "currency": "₺",
+  "related_products": [
+    "cevizli-baklava"
+  ],
+  "image": "../images/product-icli-kofte.jpg",
+  "categories": [
+    "all",
+    "tatli"
+  ],
+  "description": "Antep usulü Maltepe Sofrası'nın özel formülü ile usta ellerde, cevizli, büyük porsiyonlar halinde hazırlanmış içli köftelerimiz kızartılmış olarak servis edilir.",
+  "rating": 4.8
+}

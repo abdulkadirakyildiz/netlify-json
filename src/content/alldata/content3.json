@@ -1,0 +1,17 @@
+{
+  "price": 15,
+  "name": "Kumru Sandviç",
+  "slug": "kumru-sandvic",
+  "currency": "₺",
+  "related_products": [
+    "cevizli-baklava",
+    "icli-kofte"
+  ],
+  "image": "../images/product-kumru.jpg",
+  "categories": [
+    "all",
+    "fast-food"
+  ],
+  "description": "Jülyen doğranmış sosis , halka şeklindeki sucuk ve salamla harmanlanarak, kızarmış kaşarın enfes tadıyla servis edilir.",
+  "rating": 5
+}
