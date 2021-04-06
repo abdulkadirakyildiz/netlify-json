@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: abdulkadirakyildiz/netlify-json
   branch: master
 
 media_folder: src/content/images
