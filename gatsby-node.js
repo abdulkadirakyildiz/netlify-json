@@ -5,7 +5,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   //netlify için imagenin yolunda sıkıntı çıkıyordu onu burdan müdahele ederek değiştiriyoruz...
-  if (node.internal.type === `Alldata` && node.internal.mediaType === `application/json`) {
+  if (node.internal.type === `Alldata`) {
       const imageRelativePath = node.image.replace("src/content", "..")
       createNodeField({
         node,
