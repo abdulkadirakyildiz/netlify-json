@@ -4,7 +4,7 @@ backend:
   branch: master
 
 media_folder: src/content/images
-public_folder: src/content/images
+public_folder: /images
 
 collections:
   - label: Product Update and Add
@@ -13,15 +13,15 @@ collections:
     create: true
     extension: json
     format: json
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    identifier_field: title
+    slug: "{{fields.slug}}_{{year}}-{{month}}-{{day}}"
+    identifier_field: slug
     fields:
-      - { label: slug, name: title, widget: string }
-      - { label: Name, name: name, widget: string }
-      - { label: Price, name: price, widget: number }
-      - { label: Description, name: description, widget: string }
-      - { label: Rating, name: rating, widget: number }
-      - { label: Currentcy, name: currency, widget: string, default: ₺ }
-      - { label: Image, name: image, widget: image }
+      - { label: slug, name: slug, widget: string, required: true  }
+      - { label: Name, name: name, widget: string, required: true  }
+      - { label: Price, name: price, widget: number, required: true  }
+      - { label: Description, name: description, widget: string, required: true  }
+      - { label: Rating, name: rating, widget: number, required: true  }
+      - { label: Currentcy, name: currency, widget: string, default: ₺ , required: true }
+      - { label: Image, name: image, widget: image, required: true  }
       - { label: Categories, name: categories, widget: list }
       - { label: Related Products, name: related_products, widget: list }
