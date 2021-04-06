@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: abdulkadirakyildiz/netlify-json
   branch: master
 
