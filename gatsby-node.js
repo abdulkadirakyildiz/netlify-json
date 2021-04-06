@@ -1,7 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 // gatsby-node.js
-const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -17,7 +16,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
      // console.log(node.image)
   }
 
-  fmImagesToRelative(node);
+  const { frontmatter } = node
+  if (frontmatter) {
+    const { image } = frontmatter
+    console.log(image)
+    // if (image) {
+    //   if (image.indexOf('/img') === 0) {
+    //     frontmatter.image = path.relative(
+    //       path.dirname(node.fileAbsolutePath),
+    //       path.join(__dirname, '/images/', image)
+    //     )
+    //   }
+    // }
+  }
+
+
 
 //  // console.log(node)
 
