@@ -16,24 +16,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
      // console.log(node.image)
   }
 
-  const { frontmatter } = node
-  if (frontmatter) {
-    const { image } = frontmatter
-    console.log(image)
-    // if (image) {
-    //   if (image.indexOf('/img') === 0) {
-    //     frontmatter.image = path.relative(
-    //       path.dirname(node.fileAbsolutePath),
-    //       path.join(__dirname, '/images/', image)
-    //     )
-    //   }
-    // }
-  }
-
-
-
-//  // console.log(node)
-
   if (node.internal.mediaType === `application/json`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
