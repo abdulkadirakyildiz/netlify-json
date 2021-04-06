@@ -4,7 +4,7 @@ backend:
   branch: master
 
 media_folder: src/content/images
-public_folder: src/content/images
+public_folder: /images
 
 collections:
   - label: Product Update and Add
