@@ -4,6 +4,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: "content",
         path: `${__dirname}/src/content/`,     
       },
     },
@@ -18,7 +19,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,
   ],
 }
 
@@ -29,5 +30,20 @@ module.exports = {
 //     typeName: ({ node }) => (
 //       console.log(node))
 //      // node.name.charAt(0).toUpperCase() + node.name.slice(1))
+//   }
+// },
+
+
+
+// { 
+//   resolve: `gatsby-transformer-json`,
+//   options: {
+//     typeName: ({ node, object, isArray }) => {
+//       if (isArray) {
+//         return node.name.charAt(0).toUpperCase() + node.name.slice(1);
+//       } else {
+//         return _.upperFirst(_.camelCase(`${path.basename(node.dir)}`))
+//       }
+//     }
 //   }
 // },
