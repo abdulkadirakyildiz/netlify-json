@@ -3,8 +3,8 @@ backend:
   repo: abdulkadirakyildiz/netlify-json
   branch: master
 
-media_folder: ../images
-public_folder: ../images
+media_folder: src/content/images
+public_folder: src/content/images
 
 collections:
   - label: Product Update and Add
