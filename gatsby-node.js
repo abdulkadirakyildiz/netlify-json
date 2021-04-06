@@ -12,9 +12,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: `image`,
         value: imageRelativePath,
       })
+      console.log(node.image)
   }
 
-  console.log(node)
+ // console.log(node)
 
   if (node.internal.mediaType === `application/json`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
