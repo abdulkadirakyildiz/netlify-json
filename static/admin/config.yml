@@ -3,7 +3,7 @@ backend:
   repo: abdulkadirakyildiz/netlify-json
   branch: master
 
-media_folder: src/content/images
+media_folder: ../images
 public_folder: ../images
 
 collections:
