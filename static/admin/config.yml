@@ -10,7 +10,7 @@ collections:
     name: "products"
     folder: "content/alldata"
     create: true
-    slug: '{{fields.name}}'
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     media_folder: "content/images"
     identifier_field: title
     # public_folder: ''
