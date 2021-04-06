@@ -1,9 +1,15 @@
 {
-  "currency": "₺",
-  "slug": "ayran-asi",
-  "name": "Ayran Aşı",
   "price": 8,
+  "name": "Ayran Aşı",
+  "slug": "ayran-asi",
+  "currency": "₺",
+  "related_products": [
+    "fast-food"
+  ],
+  "image": "src/content/images/menemen-tava.jpg",
+  "categories": [
+    "all"
+  ],
   "description": "5asd",
-  "rating": 6,
-  "image": "src/content/images/ayran-asi.jpg"
+  "rating": 7
 }
