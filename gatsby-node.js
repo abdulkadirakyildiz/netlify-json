@@ -5,7 +5,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   //netlify için imagenin yolunda sıkıntı çıkıyordu onu burdan müdahele ederek değiştiriyoruz...
-  if (node.internal.type === `Alldata`) {
+  if (node.relativeDirectory === `alldata`) {
       const imageRelativePath = node.image.replace("src/content", "..")
       createNodeField({
         node,
@@ -13,6 +13,8 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         value: imageRelativePath,
       })
   }
+
+  console.log(node)
 
   if (node.internal.mediaType === `application/json`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })

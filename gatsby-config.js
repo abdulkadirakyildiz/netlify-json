@@ -14,18 +14,7 @@ module.exports = {
         path: `${__dirname}/src/content/images/`,     
       },
     },
-    { 
-      resolve: `gatsby-transformer-json`,
-      options: {
-        typeName: ({ node, object, isArray }) => {
-          if (isArray) {
-            return node.name.charAt(0).toUpperCase() + node.name.slice(1);
-          } else {
-            return _.upperFirst(_.camelCase(`${path.basename(node.dir)}`))
-          }
-        }
-      }
-    },
+    `gatsby-transformer-json`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -40,5 +29,20 @@ module.exports = {
 //     typeName: ({ node }) => (
 //       console.log(node))
 //      // node.name.charAt(0).toUpperCase() + node.name.slice(1))
+//   }
+// },
+
+
+
+// { 
+//   resolve: `gatsby-transformer-json`,
+//   options: {
+//     typeName: ({ node, object, isArray }) => {
+//       if (isArray) {
+//         return node.name.charAt(0).toUpperCase() + node.name.slice(1);
+//       } else {
+//         return _.upperFirst(_.camelCase(`${path.basename(node.dir)}`))
+//       }
+//     }
 //   }
 // },
